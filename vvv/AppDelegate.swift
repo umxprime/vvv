@@ -12,10 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    private let coordinationFactory: CoordinationFactory = DefaultCoordinationFactory()
+    private let scenesFactory: ScenesFactory = DefaultScenesFactory()
+    private var coordinator: Coordinating
 
-
+    override init() {
+        self.coordinator = coordinationFactory.dummy()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        guard let window = self.window else {
+            return false
+        }
+        self.coordinator = coordinationFactory.root(
+            window: window,
+            scenesFactory: scenesFactory
+        )
+        self.coordinator.coordinate(with: .Launch)
         return true
     }
 
