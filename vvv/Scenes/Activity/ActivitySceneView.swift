@@ -1,5 +1,5 @@
 //
-//  ActivityView.swift
+//  ActivitySceneView.swift
 //  vvv
 //
 //  Created by Maxime CHAPELET on 27/09/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityView: UIViewController {
+class ActivitySceneView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

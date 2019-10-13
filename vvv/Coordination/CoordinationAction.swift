@@ -10,6 +10,11 @@ import Foundation
 
 extension Coordination {
     enum Action {
+        enum Destination {
+            case BeginActivity
+            case EndActivity
+        }
         case Launch
+        case Navigate(to:Destination)
     }
 }

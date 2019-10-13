@@ -11,4 +11,5 @@ import UIKit
 
 protocol ScenesFactory {
     func activity() -> UIViewController
+    func ready(controllable:ReadySceneControllable) -> UIViewController
 }

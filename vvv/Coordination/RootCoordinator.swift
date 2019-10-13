@@ -45,6 +45,8 @@ extension DefaultRootCoordinator : Coordinating {
         case .Launch:
             activityCoordinator = self.coordinationFactory.activity(window: window, scenesFactory: scenesFactory)
             activityCoordinator?.enter()
+        case .Navigate :
+            activityCoordinator?.coordinate(with: action)
         }
     }
 }

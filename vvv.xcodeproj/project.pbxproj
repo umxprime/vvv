@@ -23,10 +23,34 @@
 		368CBE3B233EAD3C004E712A /* DummyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE3A233EAD3C004E712A /* DummyCoordinator.swift */; };
 		368CBE3D233EAF4C004E712A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CBE3C233EAF4C004E712A /* Main.storyboard */; };
 		368CBE3F233EB076004E712A /* DefaultScenesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE3E233EB076004E712A /* DefaultScenesFactory.swift */; };
-		368CBE42233EB143004E712A /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE40233EB143004E712A /* ActivityView.swift */; };
-		368CBE43233EB143004E712A /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CBE41233EB143004E712A /* ActivityView.xib */; };
+		368CBE42233EB143004E712A /* ActivitySceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE40233EB143004E712A /* ActivitySceneView.swift */; };
+		368CBE43233EB143004E712A /* ActivitySceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CBE41233EB143004E712A /* ActivitySceneView.xib */; };
 		368CBE45233EB59E004E712A /* DefaultGateways.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE44233EB59E004E712A /* DefaultGateways.swift */; };
+		368CBE4723428E8D004E712A /* ActivityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE4623428E8D004E712A /* ActivityGateway.swift */; };
+		368CBE4923428EDB004E712A /* ActivityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE4823428EDB004E712A /* ActivityEntity.swift */; };
+		368CBE4B23428F1A004E712A /* ActivityStepEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE4A23428F1A004E712A /* ActivityStepEntity.swift */; };
+		368CBE532342961D004E712A /* vvvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE522342961D004E712A /* vvvTests.swift */; };
+		368CBE5B23429699004E712A /* ActivityStepEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE4A23428F1A004E712A /* ActivityStepEntity.swift */; };
+		368CBE5C234296B3004E712A /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE0E233EA431004E712A /* Entities.swift */; };
+		368CBE602348DACA004E712A /* ReadySceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE5E2348DAC9004E712A /* ReadySceneView.swift */; };
+		368CBE612348DACA004E712A /* DefaultReadySceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CBE5F2348DAC9004E712A /* DefaultReadySceneView.xib */; };
+		368CBE632348DCA6004E712A /* ReadyScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE622348DCA6004E712A /* ReadyScenePresenter.swift */; };
+		368CBE652348DCB7004E712A /* ReadySceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE642348DCB7004E712A /* ReadySceneProtocols.swift */; };
+		368CBE67235378F3004E712A /* ReadySceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE66235378F3004E712A /* ReadySceneController.swift */; };
+		368CBE6923537C00004E712A /* ReadySceneDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */; };
+		368CBE6B23537F6B004E712A /* ReadySceneLoadInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */; };
+		368CBE6D23537FF8004E712A /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6C23537FF8004E712A /* Dispatcher.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		368CBE552342961D004E712A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368CBDE5233EA1BE004E712A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368CBDEC233EA1BE004E712A;
+			remoteInfo = vvv;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		368CBDED233EA1BE004E712A /* vvv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vvv.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,13 +71,34 @@
 		368CBE3A233EAD3C004E712A /* DummyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCoordinator.swift; sourceTree = "<group>"; };
 		368CBE3C233EAF4C004E712A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		368CBE3E233EB076004E712A /* DefaultScenesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScenesFactory.swift; sourceTree = "<group>"; };
-		368CBE40233EB143004E712A /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
-		368CBE41233EB143004E712A /* ActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		368CBE40233EB143004E712A /* ActivitySceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneView.swift; sourceTree = "<group>"; };
+		368CBE41233EB143004E712A /* ActivitySceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitySceneView.xib; sourceTree = "<group>"; };
 		368CBE44233EB59E004E712A /* DefaultGateways.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGateways.swift; sourceTree = "<group>"; };
+		368CBE4623428E8D004E712A /* ActivityGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityGateway.swift; sourceTree = "<group>"; };
+		368CBE4823428EDB004E712A /* ActivityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityEntity.swift; sourceTree = "<group>"; };
+		368CBE4A23428F1A004E712A /* ActivityStepEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStepEntity.swift; sourceTree = "<group>"; };
+		368CBE502342961D004E712A /* vvvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vvvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368CBE522342961D004E712A /* vvvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vvvTests.swift; sourceTree = "<group>"; };
+		368CBE542342961D004E712A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368CBE5E2348DAC9004E712A /* ReadySceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneView.swift; sourceTree = "<group>"; };
+		368CBE5F2348DAC9004E712A /* DefaultReadySceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultReadySceneView.xib; sourceTree = "<group>"; };
+		368CBE622348DCA6004E712A /* ReadyScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyScenePresenter.swift; sourceTree = "<group>"; };
+		368CBE642348DCB7004E712A /* ReadySceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneProtocols.swift; sourceTree = "<group>"; };
+		368CBE66235378F3004E712A /* ReadySceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneController.swift; sourceTree = "<group>"; };
+		368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneDataStructures.swift; sourceTree = "<group>"; };
+		368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneLoadInteractor.swift; sourceTree = "<group>"; };
+		368CBE6C23537FF8004E712A /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		368CBDEA233EA1BE004E712A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368CBE4D2342961D004E712A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				368CBDEF233EA1BE004E712A /* vvv */,
+				368CBE512342961D004E712A /* vvvTests */,
 				368CBDEE233EA1BE004E712A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				368CBDED233EA1BE004E712A /* vvv.app */,
+				368CBE502342961D004E712A /* vvvTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +139,7 @@
 				368CBDF7233EA1BF004E712A /* Assets.xcassets */,
 				368CBDF9233EA1BF004E712A /* LaunchScreen.storyboard */,
 				368CBDFC233EA1BF004E712A /* Info.plist */,
+				368CBE6C23537FF8004E712A /* Dispatcher.swift */,
 			);
 			path = vvv;
 			sourceTree = "<group>";
@@ -112,6 +160,7 @@
 		368CBE0B233EA390004E712A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				368CBE5D2348DA9E004E712A /* Ready */,
 				368CBE19233EAADB004E712A /* Activity */,
 			);
 			path = Scenes;
@@ -122,6 +171,7 @@
 			children = (
 				368CBE10233EA46F004E712A /* Gateways.swift */,
 				368CBE44233EB59E004E712A /* DefaultGateways.swift */,
+				368CBE4623428E8D004E712A /* ActivityGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -130,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				368CBE0E233EA431004E712A /* Entities.swift */,
+				368CBE4823428EDB004E712A /* ActivityEntity.swift */,
+				368CBE4A23428F1A004E712A /* ActivityStepEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -148,10 +200,33 @@
 		368CBE19233EAADB004E712A /* Activity */ = {
 			isa = PBXGroup;
 			children = (
-				368CBE40233EB143004E712A /* ActivityView.swift */,
-				368CBE41233EB143004E712A /* ActivityView.xib */,
+				368CBE40233EB143004E712A /* ActivitySceneView.swift */,
+				368CBE41233EB143004E712A /* ActivitySceneView.xib */,
 			);
 			path = Activity;
+			sourceTree = "<group>";
+		};
+		368CBE512342961D004E712A /* vvvTests */ = {
+			isa = PBXGroup;
+			children = (
+				368CBE522342961D004E712A /* vvvTests.swift */,
+				368CBE542342961D004E712A /* Info.plist */,
+			);
+			path = vvvTests;
+			sourceTree = "<group>";
+		};
+		368CBE5D2348DA9E004E712A /* Ready */ = {
+			isa = PBXGroup;
+			children = (
+				368CBE5E2348DAC9004E712A /* ReadySceneView.swift */,
+				368CBE5F2348DAC9004E712A /* DefaultReadySceneView.xib */,
+				368CBE622348DCA6004E712A /* ReadyScenePresenter.swift */,
+				368CBE642348DCB7004E712A /* ReadySceneProtocols.swift */,
+				368CBE66235378F3004E712A /* ReadySceneController.swift */,
+				368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */,
+				368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */,
+			);
+			path = Ready;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +249,24 @@
 			productReference = 368CBDED233EA1BE004E712A /* vvv.app */;
 			productType = "com.apple.product-type.application";
 		};
+		368CBE4F2342961D004E712A /* vvvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368CBE572342961D004E712A /* Build configuration list for PBXNativeTarget "vvvTests" */;
+			buildPhases = (
+				368CBE4C2342961D004E712A /* Sources */,
+				368CBE4D2342961D004E712A /* Frameworks */,
+				368CBE4E2342961D004E712A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368CBE562342961D004E712A /* PBXTargetDependency */,
+			);
+			name = vvvTests;
+			productName = vvvTests;
+			productReference = 368CBE502342961D004E712A /* vvvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,6 +279,10 @@
 				TargetAttributes = {
 					368CBDEC233EA1BE004E712A = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					368CBE4F2342961D004E712A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 368CBDEC233EA1BE004E712A;
 					};
 				};
 			};
@@ -203,6 +300,7 @@
 			projectRoot = "";
 			targets = (
 				368CBDEC233EA1BE004E712A /* vvv */,
+				368CBE4F2342961D004E712A /* vvvTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,9 +311,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				368CBE3D233EAF4C004E712A /* Main.storyboard in Resources */,
-				368CBE43233EB143004E712A /* ActivityView.xib in Resources */,
+				368CBE43233EB143004E712A /* ActivitySceneView.xib in Resources */,
+				368CBE612348DACA004E712A /* DefaultReadySceneView.xib in Resources */,
 				368CBDFB233EA1BF004E712A /* LaunchScreen.storyboard in Resources */,
 				368CBDF8233EA1BF004E712A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368CBE4E2342961D004E712A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,25 +332,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368CBE602348DACA004E712A /* ReadySceneView.swift in Sources */,
 				368CBE14233EA618004E712A /* CoordinationFactory.swift in Sources */,
 				368CBE08233EA2BC004E712A /* CoordinationAction.swift in Sources */,
+				368CBE652348DCB7004E712A /* ReadySceneProtocols.swift in Sources */,
 				368CBE04233EA24E004E712A /* Coordinating.swift in Sources */,
+				368CBE4B23428F1A004E712A /* ActivityStepEntity.swift in Sources */,
 				368CBE06233EA29D004E712A /* Coordination.swift in Sources */,
+				368CBE6B23537F6B004E712A /* ReadySceneLoadInteractor.swift in Sources */,
 				368CBE3F233EB076004E712A /* DefaultScenesFactory.swift in Sources */,
 				368CBE0F233EA431004E712A /* Entities.swift in Sources */,
+				368CBE6923537C00004E712A /* ReadySceneDataStructures.swift in Sources */,
 				368CBE16233EA63F004E712A /* DefaultCoordinationFactory.swift in Sources */,
 				368CBE0A233EA322004E712A /* RootCoordinator.swift in Sources */,
 				368CBE11233EA46F004E712A /* Gateways.swift in Sources */,
 				368CBDF1233EA1BE004E712A /* AppDelegate.swift in Sources */,
 				368CBE3B233EAD3C004E712A /* DummyCoordinator.swift in Sources */,
-				368CBE42233EB143004E712A /* ActivityView.swift in Sources */,
+				368CBE42233EB143004E712A /* ActivitySceneView.swift in Sources */,
 				368CBE1B233EAB0A004E712A /* ScenesFactory.swift in Sources */,
 				368CBE45233EB59E004E712A /* DefaultGateways.swift in Sources */,
 				368CBE18233EA8FC004E712A /* ActivityCoordinator.swift in Sources */,
+				368CBE67235378F3004E712A /* ReadySceneController.swift in Sources */,
+				368CBE4923428EDB004E712A /* ActivityEntity.swift in Sources */,
+				368CBE4723428E8D004E712A /* ActivityGateway.swift in Sources */,
+				368CBE632348DCA6004E712A /* ReadyScenePresenter.swift in Sources */,
+				368CBE6D23537FF8004E712A /* Dispatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368CBE4C2342961D004E712A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CBE5C234296B3004E712A /* Entities.swift in Sources */,
+				368CBE532342961D004E712A /* vvvTests.swift in Sources */,
+				368CBE5B23429699004E712A /* ActivityStepEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368CBE562342961D004E712A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368CBDEC233EA1BE004E712A /* vvv */;
+			targetProxy = 368CBE552342961D004E712A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		368CBDF9233EA1BF004E712A /* LaunchScreen.storyboard */ = {
@@ -379,10 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
 				INFOPLIST_FILE = vvv/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,10 +534,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
 				INFOPLIST_FILE = vvv/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,6 +547,46 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		368CBE582342961D004E712A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
+				INFOPLIST_FILE = vvvTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.umxprime.vvvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vvv.app/vvv";
+			};
+			name = Debug;
+		};
+		368CBE592342961D004E712A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
+				INFOPLIST_FILE = vvvTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.umxprime.vvvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vvv.app/vvv";
 			};
 			name = Release;
 		};
@@ -433,6 +607,15 @@
 			buildConfigurations = (
 				368CBE00233EA1BF004E712A /* Debug */,
 				368CBE01233EA1BF004E712A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368CBE572342961D004E712A /* Build configuration list for PBXNativeTarget "vvvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368CBE582342961D004E712A /* Debug */,
+				368CBE592342961D004E712A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

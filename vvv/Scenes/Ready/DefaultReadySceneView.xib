@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DefaultReadySceneView" customModule="vvv" customModuleProvider="target">
+            <connections>
+                <outlet property="startButton" destination="h2O-N7-IAN" id="bh0-XE-IGG"/>
+                <outlet property="titleLabel" destination="enL-bR-3EC" id="pS5-5l-RHP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bms-UG-ivV">
+                    <rect key="frame" x="58.5" y="406.5" width="297" height="83"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the button when you are ready" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enL-bR-3EC">
+                            <rect key="frame" x="8" y="8" width="281" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2O-N7-IAN">
+                            <rect key="frame" x="105" y="45" width="87" height="30"/>
+                            <state key="normal" title="Here we go !"/>
+                            <connections>
+                                <action selector="start:" destination="-1" eventType="touchUpInside" id="xQQ-Je-ioT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="h2O-N7-IAN" firstAttribute="centerX" secondItem="enL-bR-3EC" secondAttribute="centerX" id="4pJ-Kd-bYi"/>
+                        <constraint firstItem="enL-bR-3EC" firstAttribute="top" secondItem="Bms-UG-ivV" secondAttribute="top" constant="8" id="5g2-HA-oi3"/>
+                        <constraint firstItem="enL-bR-3EC" firstAttribute="leading" secondItem="Bms-UG-ivV" secondAttribute="leading" constant="8" id="MhC-GZ-YtL"/>
+                        <constraint firstAttribute="trailing" secondItem="enL-bR-3EC" secondAttribute="trailing" constant="8" id="Vbe-D6-0hg"/>
+                        <constraint firstItem="h2O-N7-IAN" firstAttribute="top" secondItem="enL-bR-3EC" secondAttribute="bottom" constant="16" id="Wro-iz-Q5V"/>
+                        <constraint firstAttribute="bottom" secondItem="h2O-N7-IAN" secondAttribute="bottom" constant="8" id="gHP-5e-rME"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bms-UG-ivV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1X8-jy-l2X"/>
+                <constraint firstItem="Bms-UG-ivV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="kgJ-8z-Olm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -8,7 +8,8 @@
 
 import Foundation
 import UIKit
-protocol ActivityCoordinator : Coordinating{
+
+protocol ActivityCoordinator : Coordinating {
     
 }
 
@@ -30,7 +31,7 @@ extension DefaultActivityCoordinator: ActivityCoordinator {
 
 extension DefaultActivityCoordinator: Coordinating {
     func enter() {
-        viewController = scenesFactory.activity()
+        viewController = scenesFactory.ready(controllable: self)
         window.rootViewController = viewController
     }
     
@@ -43,4 +44,11 @@ extension DefaultActivityCoordinator: Coordinating {
     }
     
     
+}
+
+extension DefaultActivityCoordinator : ReadySceneControllable {
+    func didPressReadyButton() {
+        viewController = scenesFactory.activity()
+        window.rootViewController = viewController
+    }
 }
