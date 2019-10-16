@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ActivitySceneView: UIViewController {
+protocol ActivitySceneView {
+    func update(with viewModel:ActivityScene.ViewModel)
+}
 
+class DefaultActivitySceneView: UIViewController {
+    @IBOutlet weak var timeLabel: UILabel!
+    var controller: ActivitySceneController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        controller?.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
@@ -27,4 +33,16 @@ class ActivitySceneView: UIViewController {
     }
     */
 
+}
+
+extension DefaultActivitySceneView: ActivitySceneView {
+    func update(with viewModel: ActivityScene.ViewModel) {
+        timeLabel.text = viewModel.time
+    }
+}
+
+extension DefaultActivitySceneView: ActivitySceneConfigurable {
+    func configure(controller: ActivitySceneController) {
+        self.controller = controller
+    }
 }

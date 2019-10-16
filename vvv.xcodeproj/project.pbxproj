@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361EB4312357C24A0036E2EB /* ActivitySceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4302357C24A0036E2EB /* ActivitySceneInteractor.swift */; };
+		361EB4332357C66E0036E2EB /* ActivitySceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4322357C66E0036E2EB /* ActivitySceneController.swift */; };
+		361EB4352357C6B40036E2EB /* ActivityScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4342357C6B40036E2EB /* ActivityScenePresenter.swift */; };
+		361EB4372357C74A0036E2EB /* ActivitySceneDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4362357C74A0036E2EB /* ActivitySceneDataStructures.swift */; };
+		361EB4392357CC910036E2EB /* ActivitySceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4382357CC910036E2EB /* ActivitySceneProtocols.swift */; };
 		368CBDF1233EA1BE004E712A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBDF0233EA1BE004E712A /* AppDelegate.swift */; };
 		368CBDF8233EA1BF004E712A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368CBDF7233EA1BF004E712A /* Assets.xcassets */; };
 		368CBDFB233EA1BF004E712A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CBDF9233EA1BF004E712A /* LaunchScreen.storyboard */; };
@@ -24,7 +29,7 @@
 		368CBE3D233EAF4C004E712A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CBE3C233EAF4C004E712A /* Main.storyboard */; };
 		368CBE3F233EB076004E712A /* DefaultScenesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE3E233EB076004E712A /* DefaultScenesFactory.swift */; };
 		368CBE42233EB143004E712A /* ActivitySceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE40233EB143004E712A /* ActivitySceneView.swift */; };
-		368CBE43233EB143004E712A /* ActivitySceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CBE41233EB143004E712A /* ActivitySceneView.xib */; };
+		368CBE43233EB143004E712A /* DefaultActivitySceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CBE41233EB143004E712A /* DefaultActivitySceneView.xib */; };
 		368CBE45233EB59E004E712A /* DefaultGateways.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE44233EB59E004E712A /* DefaultGateways.swift */; };
 		368CBE4723428E8D004E712A /* ActivityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE4623428E8D004E712A /* ActivityGateway.swift */; };
 		368CBE4923428EDB004E712A /* ActivityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE4823428EDB004E712A /* ActivityEntity.swift */; };
@@ -52,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		361EB4302357C24A0036E2EB /* ActivitySceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneInteractor.swift; sourceTree = "<group>"; };
+		361EB4322357C66E0036E2EB /* ActivitySceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneController.swift; sourceTree = "<group>"; };
+		361EB4342357C6B40036E2EB /* ActivityScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScenePresenter.swift; sourceTree = "<group>"; };
+		361EB4362357C74A0036E2EB /* ActivitySceneDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneDataStructures.swift; sourceTree = "<group>"; };
+		361EB4382357CC910036E2EB /* ActivitySceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneProtocols.swift; sourceTree = "<group>"; };
 		368CBDED233EA1BE004E712A /* vvv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vvv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368CBDF0233EA1BE004E712A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368CBDF7233EA1BF004E712A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +81,7 @@
 		368CBE3C233EAF4C004E712A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		368CBE3E233EB076004E712A /* DefaultScenesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScenesFactory.swift; sourceTree = "<group>"; };
 		368CBE40233EB143004E712A /* ActivitySceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneView.swift; sourceTree = "<group>"; };
-		368CBE41233EB143004E712A /* ActivitySceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitySceneView.xib; sourceTree = "<group>"; };
+		368CBE41233EB143004E712A /* DefaultActivitySceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultActivitySceneView.xib; sourceTree = "<group>"; };
 		368CBE44233EB59E004E712A /* DefaultGateways.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGateways.swift; sourceTree = "<group>"; };
 		368CBE4623428E8D004E712A /* ActivityGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityGateway.swift; sourceTree = "<group>"; };
 		368CBE4823428EDB004E712A /* ActivityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityEntity.swift; sourceTree = "<group>"; };
@@ -198,7 +208,12 @@
 			isa = PBXGroup;
 			children = (
 				368CBE40233EB143004E712A /* ActivitySceneView.swift */,
-				368CBE41233EB143004E712A /* ActivitySceneView.xib */,
+				368CBE41233EB143004E712A /* DefaultActivitySceneView.xib */,
+				361EB4302357C24A0036E2EB /* ActivitySceneInteractor.swift */,
+				361EB4322357C66E0036E2EB /* ActivitySceneController.swift */,
+				361EB4342357C6B40036E2EB /* ActivityScenePresenter.swift */,
+				361EB4362357C74A0036E2EB /* ActivitySceneDataStructures.swift */,
+				361EB4382357CC910036E2EB /* ActivitySceneProtocols.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -308,7 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				368CBE3D233EAF4C004E712A /* Main.storyboard in Resources */,
-				368CBE43233EB143004E712A /* ActivitySceneView.xib in Resources */,
+				368CBE43233EB143004E712A /* DefaultActivitySceneView.xib in Resources */,
 				368CBE612348DACA004E712A /* DefaultReadySceneView.xib in Resources */,
 				368CBDFB233EA1BF004E712A /* LaunchScreen.storyboard in Resources */,
 				368CBDF8233EA1BF004E712A /* Assets.xcassets in Resources */,
@@ -334,15 +349,18 @@
 				368CBE08233EA2BC004E712A /* CoordinationAction.swift in Sources */,
 				368CBE652348DCB7004E712A /* ReadySceneProtocols.swift in Sources */,
 				368CBE04233EA24E004E712A /* Coordinating.swift in Sources */,
+				361EB4332357C66E0036E2EB /* ActivitySceneController.swift in Sources */,
 				368CBE4B23428F1A004E712A /* ActivityStepEntity.swift in Sources */,
 				368CBE06233EA29D004E712A /* Coordination.swift in Sources */,
 				368CBE6B23537F6B004E712A /* ReadySceneLoadInteractor.swift in Sources */,
 				368CBE3F233EB076004E712A /* DefaultScenesFactory.swift in Sources */,
 				368CBE0F233EA431004E712A /* Entities.swift in Sources */,
+				361EB4372357C74A0036E2EB /* ActivitySceneDataStructures.swift in Sources */,
 				368CBE6923537C00004E712A /* ReadySceneDataStructures.swift in Sources */,
 				368CBE16233EA63F004E712A /* DefaultCoordinationFactory.swift in Sources */,
 				368CBE0A233EA322004E712A /* RootCoordinator.swift in Sources */,
 				368CBE11233EA46F004E712A /* Gateways.swift in Sources */,
+				361EB4352357C6B40036E2EB /* ActivityScenePresenter.swift in Sources */,
 				368CBDF1233EA1BE004E712A /* AppDelegate.swift in Sources */,
 				368CBE3B233EAD3C004E712A /* DummyCoordinator.swift in Sources */,
 				368CBE42233EB143004E712A /* ActivitySceneView.swift in Sources */,
@@ -351,7 +369,9 @@
 				368CBE18233EA8FC004E712A /* ActivityCoordinator.swift in Sources */,
 				368CBE67235378F3004E712A /* ReadySceneController.swift in Sources */,
 				368CBE4923428EDB004E712A /* ActivityEntity.swift in Sources */,
+				361EB4312357C24A0036E2EB /* ActivitySceneInteractor.swift in Sources */,
 				368CBE4723428E8D004E712A /* ActivityGateway.swift in Sources */,
+				361EB4392357CC910036E2EB /* ActivitySceneProtocols.swift in Sources */,
 				368CBE632348DCA6004E712A /* ReadyScenePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFF7Z495BM;
 				INFOPLIST_FILE = vvv/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFF7Z495BM;
 				INFOPLIST_FILE = vvv/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
