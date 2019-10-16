@@ -14,6 +14,6 @@ enum ReadyScene {
         let start:String
     }
     enum Events {
-        static let OnLoadEvent = Event()
+        case OnLoad
     }
 }

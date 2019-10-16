@@ -14,12 +14,11 @@ class DefaultScenesFactory {
 }
 
 extension DefaultScenesFactory : ScenesFactory {
-    func ready(controllable:ReadySceneControllable) -> UIViewController {
+    func ready(controllable:ReadySceneControllableCoordinator) -> UIViewController {
         let viewController = DefaultReadySceneView(nibName: nil, bundle: nil)
         let presenter = DefaultReadyScenePresenter(view: viewController)
-        let dispatcher = DefaultDispatcher()
-        dispatcher.bind(event: ReadyScene.Events.OnLoadEvent, interactor: ReadySceneLoadInteractor(presenter: presenter))
-        let controller = DefaultReadySceneController(controllable: controllable, dispatcher: dispatcher)
+        let interactor = DefaultReadySceneLoadInteractor(presenter: presenter)
+        let controller = DefaultReadySceneController(controllable: controllable, interactor:interactor)
         viewController.configure(controller: controller)
         return viewController
     }

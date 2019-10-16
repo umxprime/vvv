@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ReadySceneControllable {
+protocol ReadySceneControllableCoordinator {
     func didPressReadyButton()
 }
 
@@ -18,12 +18,12 @@ protocol ReadySceneController {
 }
 
 class DefaultReadySceneController {
-    let controllable:ReadySceneControllable
-    let dispatcher:Dispatcher
-    init(controllable:ReadySceneControllable,
-         dispatcher:Dispatcher) {
+    let controllable:ReadySceneControllableCoordinator
+    let interactor:ReadySceneLoadInteractor
+    init(controllable:ReadySceneControllableCoordinator,
+         interactor:ReadySceneLoadInteractor) {
         self.controllable = controllable
-        self.dispatcher = dispatcher
+        self.interactor = interactor
     }
 }
 
@@ -32,6 +32,6 @@ extension DefaultReadySceneController : ReadySceneController {
         controllable.didPressReadyButton()
     }
     func viewDidLoad() {
-        dispatcher.dispatch(event: ReadyScene.Events.OnLoadEvent)
+        interactor.Initialize()
     }
 }

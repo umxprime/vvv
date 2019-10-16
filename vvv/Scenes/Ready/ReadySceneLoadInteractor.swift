@@ -8,15 +8,19 @@
 
 import Foundation
 
-class ReadySceneLoadInteractor {
+protocol ReadySceneLoadInteractor {
+    func Initialize()
+}
+
+class DefaultReadySceneLoadInteractor {
     let presenter:ReadyScenePresenter
     init(presenter:ReadyScenePresenter) {
         self.presenter = presenter
     }
 }
 
-extension ReadySceneLoadInteractor : Interactor {
-    func interact(with event: Event) {
+extension DefaultReadySceneLoadInteractor : ReadySceneLoadInteractor {
+    func Initialize() {
         self.presenter.present()
     }
 }

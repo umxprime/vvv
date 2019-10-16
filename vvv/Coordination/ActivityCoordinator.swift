@@ -42,11 +42,9 @@ extension DefaultActivityCoordinator: Coordinating {
     func exit() {
         
     }
-    
-    
 }
 
-extension DefaultActivityCoordinator : ReadySceneControllable {
+extension DefaultActivityCoordinator : ReadySceneControllableCoordinator {
     func didPressReadyButton() {
         viewController = scenesFactory.activity()
         window.rootViewController = viewController

@@ -39,7 +39,6 @@
 		368CBE67235378F3004E712A /* ReadySceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE66235378F3004E712A /* ReadySceneController.swift */; };
 		368CBE6923537C00004E712A /* ReadySceneDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */; };
 		368CBE6B23537F6B004E712A /* ReadySceneLoadInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */; };
-		368CBE6D23537FF8004E712A /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6C23537FF8004E712A /* Dispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +86,6 @@
 		368CBE66235378F3004E712A /* ReadySceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneController.swift; sourceTree = "<group>"; };
 		368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneDataStructures.swift; sourceTree = "<group>"; };
 		368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneLoadInteractor.swift; sourceTree = "<group>"; };
-		368CBE6C23537FF8004E712A /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +137,6 @@
 				368CBDF7233EA1BF004E712A /* Assets.xcassets */,
 				368CBDF9233EA1BF004E712A /* LaunchScreen.storyboard */,
 				368CBDFC233EA1BF004E712A /* Info.plist */,
-				368CBE6C23537FF8004E712A /* Dispatcher.swift */,
 			);
 			path = vvv;
 			sourceTree = "<group>";
@@ -356,7 +353,6 @@
 				368CBE4923428EDB004E712A /* ActivityEntity.swift in Sources */,
 				368CBE4723428E8D004E712A /* ActivityGateway.swift in Sources */,
 				368CBE632348DCA6004E712A /* ReadyScenePresenter.swift in Sources */,
-				368CBE6D23537FF8004E712A /* Dispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
