@@ -17,7 +17,7 @@ extension DefaultScenesFactory : ScenesFactory {
     func ready(controllable:ReadySceneControllableCoordinator) -> UIViewController {
         let viewController = DefaultReadySceneView(nibName: nil, bundle: nil)
         let presenter = DefaultReadyScenePresenter(view: viewController)
-        let interactor = DefaultReadySceneLoadInteractor(presenter: presenter)
+        let interactor = DefaultReadySceneInteractor(presenter: presenter)
         let controller = DefaultReadySceneController(controllable: controllable, interactor:interactor)
         viewController.configure(controller: controller)
         return viewController

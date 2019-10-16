@@ -19,9 +19,9 @@ protocol ReadySceneController {
 
 class DefaultReadySceneController {
     let controllable:ReadySceneControllableCoordinator
-    let interactor:ReadySceneLoadInteractor
+    let interactor:ReadySceneInteractor
     init(controllable:ReadySceneControllableCoordinator,
-         interactor:ReadySceneLoadInteractor) {
+         interactor:ReadySceneInteractor) {
         self.controllable = controllable
         self.interactor = interactor
     }

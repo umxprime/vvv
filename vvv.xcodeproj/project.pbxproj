@@ -43,7 +43,7 @@
 		368CBE652348DCB7004E712A /* ReadySceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE642348DCB7004E712A /* ReadySceneProtocols.swift */; };
 		368CBE67235378F3004E712A /* ReadySceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE66235378F3004E712A /* ReadySceneController.swift */; };
 		368CBE6923537C00004E712A /* ReadySceneDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */; };
-		368CBE6B23537F6B004E712A /* ReadySceneLoadInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */; };
+		368CBE6B23537F6B004E712A /* ReadySceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBE6A23537F6B004E712A /* ReadySceneInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +95,7 @@
 		368CBE642348DCB7004E712A /* ReadySceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneProtocols.swift; sourceTree = "<group>"; };
 		368CBE66235378F3004E712A /* ReadySceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneController.swift; sourceTree = "<group>"; };
 		368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneDataStructures.swift; sourceTree = "<group>"; };
-		368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneLoadInteractor.swift; sourceTree = "<group>"; };
+		368CBE6A23537F6B004E712A /* ReadySceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadySceneInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +236,7 @@
 				368CBE642348DCB7004E712A /* ReadySceneProtocols.swift */,
 				368CBE66235378F3004E712A /* ReadySceneController.swift */,
 				368CBE6823537C00004E712A /* ReadySceneDataStructures.swift */,
-				368CBE6A23537F6B004E712A /* ReadySceneLoadInteractor.swift */,
+				368CBE6A23537F6B004E712A /* ReadySceneInteractor.swift */,
 			);
 			path = Ready;
 			sourceTree = "<group>";
@@ -352,7 +352,7 @@
 				361EB4332357C66E0036E2EB /* ActivitySceneController.swift in Sources */,
 				368CBE4B23428F1A004E712A /* ActivityStepEntity.swift in Sources */,
 				368CBE06233EA29D004E712A /* Coordination.swift in Sources */,
-				368CBE6B23537F6B004E712A /* ReadySceneLoadInteractor.swift in Sources */,
+				368CBE6B23537F6B004E712A /* ReadySceneInteractor.swift in Sources */,
 				368CBE3F233EB076004E712A /* DefaultScenesFactory.swift in Sources */,
 				368CBE0F233EA431004E712A /* Entities.swift in Sources */,
 				361EB4372357C74A0036E2EB /* ActivitySceneDataStructures.swift in Sources */,

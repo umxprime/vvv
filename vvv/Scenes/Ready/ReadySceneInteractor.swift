@@ -1,5 +1,5 @@
 //
-//  ReadySceneLoadInteractor.swift
+//  ReadySceneInteractor.swift
 //  vvv
 //
 //  Created by Maxime CHAPELET on 13/10/2019.
@@ -8,18 +8,18 @@
 
 import Foundation
 
-protocol ReadySceneLoadInteractor {
+protocol ReadySceneInteractor {
     func Initialize()
 }
 
-class DefaultReadySceneLoadInteractor {
+class DefaultReadySceneInteractor {
     let presenter:ReadyScenePresenter
     init(presenter:ReadyScenePresenter) {
         self.presenter = presenter
     }
 }
 
-extension DefaultReadySceneLoadInteractor : ReadySceneLoadInteractor {
+extension DefaultReadySceneInteractor : ReadySceneInteractor {
     func Initialize() {
         self.presenter.present()
     }
