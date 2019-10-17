@@ -9,10 +9,10 @@
 import Foundation
 
 protocol ActivitySceneInteractor {
-    func Initialize()
-    func NextStep()
-    func PreviousStep()
-    func Deinitialize()
+    func initialize()
+    func nextStep()
+    func previousStep()
+    func deinitialize()
 }
 
 class DefaultActivitySceneInteractor {
@@ -38,19 +38,19 @@ class DefaultActivitySceneInteractor {
 }
 
 extension DefaultActivitySceneInteractor : ActivitySceneInteractor {
-    func NextStep() {
+    func nextStep() {
         self.step += self.step + 1 < self.activity.steps.count ? 1 : 0
         startDate = Date()
         self.presenter.present(time: 0.0, step: self.sceneStep())
     }
     
-    func PreviousStep() {
+    func previousStep() {
         self.step -= self.step - 1 >= 0 ? 1 : 0
         startDate = Date()
         self.presenter.present(time: 0.0, step: self.sceneStep())
     }
     
-    func Initialize() {
+    func initialize() {
         startDate = Date()
         updateTimer = Timer.scheduledTimer(withTimeInterval: 0.025, repeats: true, block: { [weak self] (timer) in
             guard let self = self else {return}
@@ -62,7 +62,7 @@ extension DefaultActivitySceneInteractor : ActivitySceneInteractor {
         })
         self.presenter.present(time: 0.0, step: self.sceneStep())
     }
-    func Deinitialize() {
+    func deinitialize() {
         updateTimer?.invalidate()
     }
 }

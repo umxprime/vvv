@@ -24,18 +24,18 @@ class DefaultActivitySceneController {
 
 extension DefaultActivitySceneController : ActivitySceneController {
     func next() {
-        interactor.NextStep()
+        interactor.nextStep()
     }
     
     func previous() {
-        interactor.PreviousStep()
+        interactor.previousStep()
     }
     
     func viewDidLoad() {
-        interactor.Initialize()
+        interactor.initialize()
     }
     
     func viewDidDisappear() {
-        interactor.Deinitialize()
+        interactor.deinitialize()
     }
 }
