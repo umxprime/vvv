@@ -11,6 +11,8 @@ import Foundation
 protocol ActivitySceneController {
     func viewDidLoad()
     func viewDidDisappear()
+    func next()
+    func previous()
 }
 
 class DefaultActivitySceneController {
@@ -21,6 +23,14 @@ class DefaultActivitySceneController {
 }
 
 extension DefaultActivitySceneController : ActivitySceneController {
+    func next() {
+        interactor.NextStep()
+    }
+    
+    func previous() {
+        interactor.PreviousStep()
+    }
+    
     func viewDidLoad() {
         interactor.Initialize()
     }

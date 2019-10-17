@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ActivityScenePresenter {
-    func present(time:TimeInterval)
+    func present(time: TimeInterval, step: ActivityScene.Step)
 }
 
 class DefaultActivityScenePresenter {
@@ -20,8 +20,15 @@ class DefaultActivityScenePresenter {
 }
 
 extension DefaultActivityScenePresenter : ActivityScenePresenter {
-    func present(time: TimeInterval) {
-        let viewModel = ActivityScene.ViewModel(time: String(format: "%.02fs", arguments: [time]))
+    func present(time: TimeInterval, step: ActivityScene.Step) {
+        let viewModel = ActivityScene.ViewModel(
+            time: String(format: "%.02fs", arguments: [time]),
+            step: ActivityScene.ViewModel.Step(
+                problem: step.problem,
+                result: step.result,
+                paging: "\(step.index)/\(step.total)"),
+            canStepBackward: step.index > 1,
+            canStepForward: step.index < step.total)
         self.view.update(with: viewModel)
     }
 }

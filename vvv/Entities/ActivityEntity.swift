@@ -9,12 +9,15 @@
 import Foundation
 
 protocol ActivityEntity {
-    
+    var steps:[ActivityStepEntity] {get}
 }
 
 extension Entities {
     class DefaultActivityEntity {
-        
+        let steps:[ActivityStepEntity]
+        init(steps:[ActivityStepEntity]) {
+            self.steps = steps
+        }
     }
 }
 

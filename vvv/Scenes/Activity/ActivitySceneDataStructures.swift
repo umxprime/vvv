@@ -9,7 +9,21 @@
 import Foundation
 
 enum ActivityScene {
+    struct Step {
+        let problem: String
+        let result: String
+        let index: Int
+        let total: Int
+    }
     struct ViewModel {
-        let time:String
+        struct Step {
+            let problem: String
+            let result: String
+            let paging: String
+        }
+        let time: String
+        let step: Step
+        let canStepBackward: Bool
+        let canStepForward: Bool
     }
 }
