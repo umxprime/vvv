@@ -12,6 +12,14 @@
 		361EB4352357C6B40036E2EB /* ActivityScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4342357C6B40036E2EB /* ActivityScenePresenter.swift */; };
 		361EB4372357C74A0036E2EB /* ActivitySceneDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4362357C74A0036E2EB /* ActivitySceneDataStructures.swift */; };
 		361EB4392357CC910036E2EB /* ActivitySceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB4382357CC910036E2EB /* ActivitySceneProtocols.swift */; };
+		361EB43C2358FFDC0036E2EB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB43B2358FFDC0036E2EB /* Expression.swift */; };
+		361EB43E2359003F0036E2EB /* ValueExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB43D2359003F0036E2EB /* ValueExpression.swift */; };
+		361EB440235900D60036E2EB /* BinaryExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB43F235900D60036E2EB /* BinaryExpression.swift */; };
+		361EB442235901970036E2EB /* ExpressionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB441235901970036E2EB /* ExpressionContext.swift */; };
+		361EB443235901FE0036E2EB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB43B2358FFDC0036E2EB /* Expression.swift */; };
+		361EB444235901FE0036E2EB /* ValueExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB43D2359003F0036E2EB /* ValueExpression.swift */; };
+		361EB445235901FE0036E2EB /* BinaryExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB43F235900D60036E2EB /* BinaryExpression.swift */; };
+		361EB446235901FE0036E2EB /* ExpressionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EB441235901970036E2EB /* ExpressionContext.swift */; };
 		368CBDF1233EA1BE004E712A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CBDF0233EA1BE004E712A /* AppDelegate.swift */; };
 		368CBDF8233EA1BF004E712A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368CBDF7233EA1BF004E712A /* Assets.xcassets */; };
 		368CBDFB233EA1BF004E712A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CBDF9233EA1BF004E712A /* LaunchScreen.storyboard */; };
@@ -62,6 +70,10 @@
 		361EB4342357C6B40036E2EB /* ActivityScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScenePresenter.swift; sourceTree = "<group>"; };
 		361EB4362357C74A0036E2EB /* ActivitySceneDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneDataStructures.swift; sourceTree = "<group>"; };
 		361EB4382357CC910036E2EB /* ActivitySceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySceneProtocols.swift; sourceTree = "<group>"; };
+		361EB43B2358FFDC0036E2EB /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		361EB43D2359003F0036E2EB /* ValueExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueExpression.swift; sourceTree = "<group>"; };
+		361EB43F235900D60036E2EB /* BinaryExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryExpression.swift; sourceTree = "<group>"; };
+		361EB441235901970036E2EB /* ExpressionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionContext.swift; sourceTree = "<group>"; };
 		368CBDED233EA1BE004E712A /* vvv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vvv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368CBDF0233EA1BE004E712A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368CBDF7233EA1BF004E712A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +128,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361EB43A2358FFAD0036E2EB /* Expressions */ = {
+			isa = PBXGroup;
+			children = (
+				361EB43B2358FFDC0036E2EB /* Expression.swift */,
+				361EB43D2359003F0036E2EB /* ValueExpression.swift */,
+				361EB43F235900D60036E2EB /* BinaryExpression.swift */,
+				361EB441235901970036E2EB /* ExpressionContext.swift */,
+			);
+			path = Expressions;
+			sourceTree = "<group>";
+		};
 		368CBDE4233EA1BE004E712A = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +160,7 @@
 		368CBDEF233EA1BE004E712A /* vvv */ = {
 			isa = PBXGroup;
 			children = (
+				361EB43A2358FFAD0036E2EB /* Expressions */,
 				368CBE3C233EAF4C004E712A /* Main.storyboard */,
 				368CBE12233EA5E2004E712A /* Factories */,
 				368CBE0D233EA3EE004E712A /* Entities */,
@@ -350,13 +374,16 @@
 				368CBE652348DCB7004E712A /* ReadySceneProtocols.swift in Sources */,
 				368CBE04233EA24E004E712A /* Coordinating.swift in Sources */,
 				361EB4332357C66E0036E2EB /* ActivitySceneController.swift in Sources */,
+				361EB440235900D60036E2EB /* BinaryExpression.swift in Sources */,
 				368CBE4B23428F1A004E712A /* ActivityStepEntity.swift in Sources */,
 				368CBE06233EA29D004E712A /* Coordination.swift in Sources */,
+				361EB43E2359003F0036E2EB /* ValueExpression.swift in Sources */,
 				368CBE6B23537F6B004E712A /* ReadySceneInteractor.swift in Sources */,
 				368CBE3F233EB076004E712A /* DefaultScenesFactory.swift in Sources */,
 				368CBE0F233EA431004E712A /* Entities.swift in Sources */,
 				361EB4372357C74A0036E2EB /* ActivitySceneDataStructures.swift in Sources */,
 				368CBE6923537C00004E712A /* ReadySceneDataStructures.swift in Sources */,
+				361EB442235901970036E2EB /* ExpressionContext.swift in Sources */,
 				368CBE16233EA63F004E712A /* DefaultCoordinationFactory.swift in Sources */,
 				368CBE0A233EA322004E712A /* RootCoordinator.swift in Sources */,
 				368CBE11233EA46F004E712A /* Gateways.swift in Sources */,
@@ -373,6 +400,7 @@
 				368CBE4723428E8D004E712A /* ActivityGateway.swift in Sources */,
 				361EB4392357CC910036E2EB /* ActivitySceneProtocols.swift in Sources */,
 				368CBE632348DCA6004E712A /* ReadyScenePresenter.swift in Sources */,
+				361EB43C2358FFDC0036E2EB /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +409,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				368CBE5C234296B3004E712A /* Entities.swift in Sources */,
+				361EB446235901FE0036E2EB /* ExpressionContext.swift in Sources */,
+				361EB444235901FE0036E2EB /* ValueExpression.swift in Sources */,
 				368CBE532342961D004E712A /* ExpressionsTests.swift in Sources */,
 				368CBE5B23429699004E712A /* ActivityStepEntity.swift in Sources */,
+				361EB445235901FE0036E2EB /* BinaryExpression.swift in Sources */,
+				361EB443235901FE0036E2EB /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
