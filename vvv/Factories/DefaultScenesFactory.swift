@@ -26,7 +26,10 @@ extension DefaultScenesFactory : ScenesFactory {
     func activity() -> UIViewController {
         let viewController = DefaultActivitySceneView(nibName: nil, bundle: nil)
         let presenter = DefaultActivityScenePresenter(view: viewController)
-        let interactor = DefaultActivitySceneInteractor(presenter: presenter, activitiesFactory: DefaultActivitiesFactory())
+        let interactor = DefaultActivitySceneInteractor(
+            presenter: presenter,
+            activitiesFactory: DefaultActivitiesFactory(),
+            generatorsFactory: DefaultGeneratorsFactory())
         let controller = DefaultActivitySceneController(interactor: interactor)
         viewController.configure(controller: controller)
         return viewController

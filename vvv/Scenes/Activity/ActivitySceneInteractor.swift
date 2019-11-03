@@ -21,10 +21,15 @@ class DefaultActivitySceneInteractor {
     var step = 0
     let activity: ActivityEntity
     let presenter: ActivityScenePresenter
-    init(presenter: ActivityScenePresenter, activitiesFactory: ActivitiesFactory) {
+    init(presenter: ActivityScenePresenter,
+         activitiesFactory: ActivitiesFactory,
+         generatorsFactory: GeneratorsFactory) {
         self.presenter = presenter
-        self.activity = activitiesFactory.create(count: 10, setup: { () -> ExpressionSetup in
-            return ExpressionSetup(format: "7 + %i", arguments: [arc4random()%10])
+        let numberGenerator = generatorsFactory.createNonRepeatingNumberGenerator()
+        numberGenerator.configure(min: 0, max: 10)
+        self.activity = activitiesFactory.create(count: 20, setup: { () -> ExpressionSetup in
+            
+            return ExpressionSetup(format: "7 + %i", arguments: [numberGenerator.next()])
         })
     }
     func sceneStep() -> ActivityScene.Step {
